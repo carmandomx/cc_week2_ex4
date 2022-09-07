@@ -1,8 +1,8 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
-const func = (c) => {
+const bubbleSort = (arr) => {
     /* Only make changes below this comment */
     
-    
+    return arr
     /* Only make changes below this comment */
 }
 
@@ -11,4 +11,4 @@ const func = (c) => {
 
 
 /** DO NOT CHANGE THE LINE BELOW **/
-module.exports.func = func;
+module.exports.bubbleSort = bubbleSort;
