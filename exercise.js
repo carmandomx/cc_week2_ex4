@@ -2,9 +2,13 @@
 const bubbleSort = (arr) => {
     /* Only make changes below this comment */
     
+    /* We will compare the first and second numbers of the array
+    if the first number is greater than the second number we swap them}
+    and continue with the next to numbers*/
+
     let temp;
 
-    // Iterates through each item in the list
+    // Iterates through the array
     for (let i = 0; i < arr.length; i++) {
 
         // This for loop makes comparisons between each element in the list
@@ -15,14 +19,12 @@ const bubbleSort = (arr) => {
                 
                 // Swaps the numbers
                 temp = arr[j]; // Saves the arr index value to not to lose it
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                arr[j] = arr[j + 1]; // Swap A for B
+                arr[j + 1] = temp; // Swap B for A which is in the temporal variable
             }
         }
 
     }
-
-    console.log(arr);
 
     return arr // Return the sorted arr
     /* Only make changes below this comment */
