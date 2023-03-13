@@ -1,21 +1,21 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const bubbleSort = (arr) => {
   /* Only make changes below this comment */
-  let len = arr.length; //Se guarda en una variable el tamaño del array a ordenar
+  let len = arr.length; //The size of the array to sort is stored in a variable.
 
-  //Se hacen dos iteraciones, la primera, i, se hace para repetir la segunda iteracion un número de veces igual al tamaño del array.
-  //La segunda iteracion, j, llega hasta el penúltimo elemento del array, ya que hará una comparación con el elemento actual y el siguiente.
+  //Two iterations are made, the first, i, is made to repeat the second iteration a number of times equal to the size of the array.
+  //The second iteration, j, goes until the penultimate element of the array, since it will do a comparison with the current element and the next one.
   for (let i = 0; i < len; i++) {
     for (let j = 0; j < len - 1; j++) {
-      //En cada iteración de j hace una comparación del elemento actual con el siguiente y si el actual es mayor que el siguiente, cambia de posición.
+      //In each iteration of j it does a comparison of the current element with the next one and if the current one is greater than the next one, it changes its position.
       if (arr[j] > arr[j + 1]) {
-        let temp = arr[j]; //Para el cambio de posición se crea una variable temporal que guarda el valor actual
-        arr[j] = arr[j + 1]; //Después el valor actual se cambia por el siguiente
-        arr[j + 1] = temp; //Y el siguiente se cambia por el valor de la variable temporal, que era el valor anterior.
+        let temp = arr[j]; //For the position change, a temporary variable is created that stores the current value.
+        arr[j] = arr[j + 1]; //Then the current value is changed to the next one in the array
+        arr[j + 1] = temp; //And the next one is changed to the value of the temporary variable, which was the previous value.
       }
     }
   }
-  return arr; //Cuando se recorra todo el array por X número de veces (siendo X el tamaño del array) se retorna el array ordenado.
+  return arr; //When the entire array is traversed X number of times (with X being the size of the array) the sorted array is returned.
   /* Only make changes below this comment */
 };
 
