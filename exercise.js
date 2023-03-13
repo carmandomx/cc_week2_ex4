@@ -10,19 +10,19 @@ const bubbleSort = (arr) => {
   let menor=0;
   let mayor=0;
   let temp=0;
-  //el primer loop nos sirve para tener control del largo del arreglo
+  //the first loop helps us to control the length of the arrangement
   for (let i = 0; i < control; i++) {
-    //el segundo es para analizar cada uno de los valores adentro del arreglo 
+    //the second is to analyze each of the values ​​inside the array 
     for (let j = 0; j < control; j++) {
-      //le damos a la variable menor el primer numero del arreglo
-      //le damos a la variable mayor el segundo numero del arreglo
+      //We give the minor variable the first number of the array.
+      //we give the grater variable the second number of the array
       menor=arr[j];
       mayor=arr[j+1];
-      //comparamos si la variable "menor" es mayor que "mayor" 
+      //we compare if the variable "minor" is greater than "greater" 
       
       if (menor > mayor) {
-        //si "menor" > "mayor" entonces almacenamos temporalmente el valor de menor para que no se nos pierda
-        // menor ahora es mayor y mayor ahora es el temp
+        //if "menor" > "mayor" then we temporarily store the value of less so that we don't lose it
+        // menor now is mayor and mayor now is temp
         /*ej:
         menor=9
         mayor=2
@@ -35,12 +35,12 @@ const bubbleSort = (arr) => {
         temp = menor;
         menor = mayor;
         mayor= temp;
-        //para que podamos recorrer un lugar y poder comparar el siguiente valor
-        //con el valor que salio "mayor"
-        //volvemos a asignar los valores del arreglo a nuestras variables;
+        //so we can loop through a place and be able to compare the next value
+        //with the value "mayor"
+        //we reassign the values ​​of the array to our variables;
         arr[j]=menor;
-        //este es por si hay un numero menor que todos los anteriores podamos 
-        //ponerlo en el lugar correcto. ej=[1,1,1,2,2,2,3,3,3,1]
+        //This is in case there is a smaller number than all the previous ones we can
+        //put in the correct place. ej=[1,1,1,2,2,2,3,3,3,1]
         //[1,1,1,1,2,2,2,3,3,3]
         arr[j+1]=mayor;
       }
